@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin-left: 300px;
+}
+.container {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 5px solid black;
+}
+header,
+.person {
+  display: flex;
+  flex-direction: row;
+}
+header .col-1,
+footer .col-1 {
+  width: 50%;
+  height: 50px;
+  background-color: black;
+}
+header .col-2,
+footer .col-2 {
+  width: 50%;
+  height: 50px;
+  background-color: white;
+}
+.photo {
+  width: 50%;
+  height: 120px;
+  background-color: yellow;
+}
+.img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px dashed black;
+  position: relative;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.25rem;
+}
+#my-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.names {
+  width: 50%;
+  height: 120px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+.name {
+  color: #fff;
+  font-size: 40px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.surname {
+  color: yellow;
+  font-size: 40px;
+  margin-left: 50px;
+}
+main {
+  display: flex;
+  flex-direction: row;
+}
+.left-menu {
+  width: 50%;
+  background-color: black;
+  color: #fff;
+}
+.right-menu {
+  width: 50%;
+  background-color: #fff;
+}
+.education,
+.contact {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+}
+.education i {
+  margin-right: 8px;
+}
+.education h2,
+.contact h2 {
+  font-size: 20px;
+  border: 1px yellow;
+  border-style: dotted;
+  margin-top: 50px;
+  padding: 5px 50px 5px 5px;
+  text-align: left;
+}
+.education p {
+  font-size: 16px;
+}
+.school {
+  margin: 10px 0px;
+  line-height: 25px;
+}
+.school i,
+.contact > p > i {
+  color: yellow;
+}
+.education .hr {
+  height: 5px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 252, 0, 1) 100%
+  );
+}
+.contact i {
+  margin: 10px 8px 10px 0;
+}
+.contact p > a {
+  color: #fff;
+  text-decoration: none;
+}
+.skills {
+  background-color: yellow;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+.skills i {
+  margin: 0px 10px 20px 15px;
+}
+.skills h2 {
+  font-size: 20px;
+  border: 1px black;
+  border-style: dotted;
+  margin: 40px 15px;
+  padding: 5px 50px 5px 5px;
+  text-align: left;
+}
+.right-menu h2 {
+  font-size: 20px;
+  border-bottom: 5px solid;
+  border-color: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 252, 0, 1) 100%
+  );
+  margin: 30px 15px;
+  text-align: left;
+}
+.profile p {
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin: 10px;
+  text-align: justify;
+}
+.certificate i {
+  margin: 0 5px 0 10px;
+}
+.certificate .hr {
+  height: 5px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 252, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 90%
+  );
+  width: 300px;
+  margin-left: 30px;
+}
+.certificate p {
+  line-height: 1.5;
+  display: flex;
+}
+.fa-certificate {
+  font-size: 10px;
+  padding: 5px 0px 5px 40px;
+}
+.certificate .pdr {
+  padding-bottom: 30px;
+}
+footer {
+  display: flex;
+}
